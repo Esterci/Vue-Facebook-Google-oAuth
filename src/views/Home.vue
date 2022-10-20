@@ -10,6 +10,7 @@
               <p>Welcome {{this.$store.state.loginUser.fb.user && this.$store.state.loginUser.fb.user.name}} !</p>
               <!-- <img :src="this.$store.state.loginUser.fb.user.name" /> -->
               <p><b>Facebook Access Token- </b>{{this.$store.state.loginUser.fb && this.$store.state.loginUser.fb.auth.accessToken}}</p>
+              <p><b>Facebook UserID- </b>{{this.$store.state.loginUser.fb && this.$store.state.loginUser.fb.auth.userID}}</p>
             </div>
           </div>
           <div v-else-if="this.$store.state.loginUser.loginType == 'google'">
